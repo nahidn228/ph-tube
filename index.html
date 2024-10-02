@@ -18,8 +18,10 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
+      <nav
+        class="w-11/12 mx-auto flex justify-between py-4 items-center border-b"
+      >
+        <div class="logo w-[100px]">
           <img src="./assets/Logo.png" alt="" />
         </div>
         <div class="search">
@@ -44,5 +46,16 @@
         </div>
       </nav>
     </header>
+    <!-- Dynamic Categories Button -->
+    <nav id="category" class="py-3 gap-5 flex justify-center"></nav>
+
+    <main>
+      <section
+        id="videos"
+        class="w-11/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10"
+      ></section>
+    </main>
+
+    <script src="./script/video.js"></script>
   </body>
 </html>
